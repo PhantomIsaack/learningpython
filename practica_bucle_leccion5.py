@@ -1,9 +1,13 @@
 a = int(input("Ingrese un numero entero positivo: "))
-for i in range (1, a):
-	print(i)
-	 if i%3=1:
-		print("Fizz")
-	elif i%5=1:
-		print("Buzz")
-	elif i%3=1 and i%5=1:
+
+for i in range (1, a+1):
+	if i%3==0 and i%5==0:
 		print("FizzBuzz")
+	elif i%3==0:
+		print("Fizz")
+	elif i%5==0:
+		print("Buzz")
+	else:
+		print(i)
+
+
